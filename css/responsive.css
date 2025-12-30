@@ -1,0 +1,413 @@
+@charset "utf-8";
+@media screen and (max-width: 1440px) {
+    html {
+        font-size: 15px;
+    }
+
+    .sec1 .lefteye .whiteeye,
+    .sec1 .righteye .whiteeye {
+        max-width: 80%;
+        top: 35px;
+        position: relative;
+    }
+
+    .sec1 .lefteye .blackeye,
+    .sec1 .righteye .blackeye {
+        max-width: 100px;
+        top: 85px;
+    }
+
+    @keyframes eyes {
+        from {
+            transform: translateX(-55px);
+            animation-delay: 2s;
+        }
+
+        to {
+            transform: translateX(-170px);
+        }
+
+    }
+
+    .sec1 .tagwrap .hashtag {
+        max-width: 200px;
+        max-height: 65px;
+        font-size: 25px;
+        line-height: 45px;
+    }
+
+    @keyframes down {
+        0% {
+            top: 0;
+            opacity: 100;
+        }
+
+        80% {
+            opacity: 40;
+        }
+
+        100% {
+            top: 400px;
+            opacity: 0;
+            animation-duration: 2s;
+        }
+    }
+
+    .sec2 .profilewrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .sec3 .sec3inner {
+        width: 95%;
+    }
+
+    .sec3 .webwrap img {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .sec3 .webwrap .clickwrap {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    html {
+        font-size: 14px;
+    }
+
+    .sec1 {
+        max-width: 1140px;
+        max-height: 700px;
+    }
+
+    .sec2,
+    .sec3,
+    .sec4,
+    .sec5 {
+        max-width: 1140px;
+    }
+
+    .sec1 .lefteye .whiteeye,
+    .sec1 .righteye .whiteeye {
+        max-width: 60%;
+        top: 65px;
+        position: relative;
+    }
+
+    .sec1 .lefteye .blackeye,
+    .sec1 .righteye .blackeye {
+        max-width: 80px;
+        top: 100px;
+    }
+
+    @keyframes eyes {
+        from {
+            transform: translateX(-115px);
+            animation-delay: 2s;
+        }
+
+        to {
+            transform: translateX(-190px);
+        }
+
+    }
+
+    .sec1 .tagwrap .hashtag {
+        max-width: 200px;
+        max-height: 65px;
+        font-size: 25px;
+        line-height: 45px;
+
+    }
+
+    @keyframes down {
+        0% {
+            top: 0;
+            opacity: 100;
+        }
+
+        80% {
+            opacity: 40;
+        }
+
+        100% {
+            top: 400px;
+            opacity: 0;
+            animation-duration: 2s;
+        }
+    }
+
+    .sec1 h1 {
+        font-size: 70px;
+        top: 100px;
+    }
+
+    .bigtitle {
+        font-size: 45px;
+    }
+
+
+    .sec2 .imgwrap img {
+        max-width: 300px;
+        margin-top: 3rem;
+    }
+
+
+    .sec2 .left h2,
+    .sec2 .left span,
+    .sec2 .right h2 {
+        font-size: 28px;
+    }
+
+    .sec2 .left h3,
+    .sec2 .right h3 {
+        font-size: 34px;
+    }
+
+    .sec2 .left h4,
+    .sec2 .right h4 {
+        font-size: 22px;
+    }
+
+    .sec3 .webwrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec3 .wrapinner>* {
+        margin: 10rem 0 0;
+    }
+
+    .sec3 .sec3inner {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec3 .webwrap img {
+        max-width: 900px;
+    }
+
+    .sec3 .webwrap .titleinner {
+        order: 2;
+    }
+
+}
+
+
+@media screen and (max-width: 735px) {
+    .sec1 {
+        position: relative;
+    }
+    .sec1 h1 {
+        font-size: 50px;
+    }
+    .sec1 .lefteye .whiteeye,
+    .sec1 .righteye .whiteeye {
+        max-width: 80%;
+        top: 60px;
+        position: static;
+    }
+    .sec1 .eyes {
+        position: absolute;
+        display: flex;
+        bottom: 50px;
+        left: 60%;
+        transform: translate(-50%);
+    }
+    .sec1 .lefteye, .sec1 .righteye {
+        position: static;
+    }
+    .sec1 .lefteye .blackeye, .sec1 .righteye .blackeye {
+        position: static;
+
+    }
+    .sec1 .lefteye .blackeye,
+    .sec1 .righteye .blackeye {
+        max-width: 60px;
+        max-height: 60px;
+       
+    }
+
+    @keyframes eyes {
+        from {
+            transform: translateX(-60px);
+            animation-delay: 2s;
+        }
+
+        to {
+            transform: translateX(-110px);
+        }
+
+    }
+
+    .sec1 h1 {
+        font-size: 40px;
+        top: 60px;
+    }
+
+    .sec1 {
+        height: 500px;
+    }
+
+    .sec1 .tagwrap .hashtag {
+        max-width: 130px;
+        max-height: 35px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .skillsinner {
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec2 {
+        height: 1500px;
+    }
+
+    .sec2 .profilewrap {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .sec2 .profilewrap {
+        display: block;
+    }
+
+    .sec4 .detail-inner {
+        display: block;
+    }
+
+    .sec4 .detail-inner img {
+        /* width: 80%; */
+        /* margin-left: 40px; */
+    }
+
+    .cardwrap {
+        display: block;
+        /* width: 100%; */
+    }
+
+    .slide1 .swiper-wrapper .swiper-slide img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .sec5 h1 {
+        font-size: 50px;
+    }
+
+    @keyframes down {
+        0% {
+            top: 0;
+            opacity: 100;
+        }
+
+        80% {
+            opacity: 40;
+        }
+
+        100% {
+            top: 300px;
+            opacity: 0;
+            animation-duration: 2s;
+        }
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .sec3 .webwrap .clickwrap {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .sec1 {
+        max-height: 350px;
+    }
+
+    .sec1 h1::after {
+        content: '';
+        height: 20px;
+    }
+
+    .sec1 h1 {
+        font-size: 30px;
+        top: 95px;
+    }
+
+    .sec2 .profilewrap {
+        display: block;
+    }
+
+    .sec2 {
+        height: 1500px;
+    }
+
+    .sec5 h1 {
+        font-size: 40px;
+    }
+
+    .sec1 .lefteye .whiteeye,
+    .sec1 .righteye .whiteeye {
+        max-width: 50%;
+        top: 35px;
+    }
+
+    .sec1 .lefteye .blackeye,
+    .sec1 .righteye .blackeye {
+        max-width: 20%;
+        top: 85px;
+    }
+
+    @keyframes eyes {
+        from {
+            transform: translateX(-115px);
+            animation-delay: 2s;
+        }
+
+        to {
+            transform: translateX(-190px);
+        }
+
+    }
+
+    .sec1 .tagwrap .hashtag {
+        max-width: 100px;
+        max-height: 25px;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    @keyframes down {
+        0% {
+            top: 0;
+            opacity: 100;
+        }
+
+        80% {
+            opacity: 40;
+        }
+
+        100% {
+            top: 220px;
+            opacity: 0;
+            animation-duration: 2s;
+        }
+    }
+
+    .sec2 .imgwrap {
+        width: 30%;
+    }
+
+    .sec2 .left {
+        width: 80%;
+    }
+
+}

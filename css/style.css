@@ -1,0 +1,431 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sec1 {
+    width: 100%;
+    height: 60rem;
+    background-color: #E8FFE5;
+    border-bottom: 2px solid black;
+    position: relative;
+    /* 보더바텀왜안먹노 */
+}
+
+.sec1 h1::after {
+    content: '';
+    width: 0.2rem;
+    height: 4.375rem;
+    display: inline-block;
+    background-color: #2e2e2e;
+    animation: blink 1.1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.sec1 .hashtag {
+    width: 15.625rem;
+    height: 3.125rem;
+    border: 1px solid black;
+    border-radius: 3.125rem;
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.875rem;
+    background-color: #E1FF01;
+    font-family: "Playfair Display", serif;
+    position: absolute;
+}
+
+.sec1 .hashtag:nth-child(1) {
+    top: 10%;
+    left: 30%;
+    transform: rotate(23deg);
+    animation: down 4s infinite;
+}
+
+.sec1 .hashtag:nth-child(2) {
+    right: 0;
+    top: 50%;
+    transform: rotate(-30deg);
+    animation: down 5s infinite;
+}
+
+.sec1 .hashtag:nth-child(3) {
+    right: 18%;
+    top: 30%;
+    transform: rotate(-20deg);
+    animation: down 8s infinite;
+}
+
+.sec1 .hashtag:nth-child(4) {
+    left: 15%;
+    top: 65%;
+    transform: rotate(16deg);
+    animation: down 6s infinite;
+}
+
+.sec1 .hashtag:nth-child(5) {
+    top: 20%;
+    left: 15%;
+    transform: rotate(20deg);
+    animation: down 5s infinite;
+}
+
+@keyframes down {
+    0% {
+        top: 0;
+        opacity: 100;
+    }
+
+    80% {
+        opacity: 40;
+    }
+
+    100% {
+        top: 600px;
+        opacity: 0;
+        animation-duration: 2s;
+    }
+}
+
+.sec1 .sec1inner {
+    display: block;
+}
+
+.sec1 h1 {
+    white-space: pre-line;
+}
+
+.sec1 .mainimg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sec1 .lefteye {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    left: 55%;
+    top: 60%;
+}
+
+.sec1 .righteye {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    left: 35%;
+    top: 60%;
+
+}
+
+.sec1 .lefteye .blackeye,
+.sec1 .righteye .blackeye {
+    position: absolute;
+    right: 0;
+    top: 3.75rem;
+    animation: eyes 3s infinite;
+}
+
+@keyframes eyes {
+    from {
+        transform: translateX(0);
+        animation-delay: 2s;
+    }
+
+    to {
+        transform: translateX(-135px);
+    }
+
+}
+
+.sec1 h1 {
+    font-size: 6.25rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 200;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 3.125rem;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+/* sec2 */
+.sec2 {
+    background-color: #E1FF01;
+    width: 100%;
+    height: 60rem;
+
+}
+
+.bigtitle {
+    font-size: 3.4375rem;
+    font-family: "Playfair Display", serif;
+    width: 100%;
+}
+
+.sec2 .imgwrap img {
+    margin-top: 1.25rem;
+    width: 25rem;
+
+
+}
+
+.namewrap {
+    display: flex;
+    margin-top: 4.375rem;
+}
+
+.sec2 h2 {
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+
+}
+
+.sec2 span {
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    margin-left: 0.625px;
+}
+
+.sec2 .contactwrap {
+    margin-top: 2.5rem;
+}
+
+.sec2 .contactwrap h4 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    width: 100%;
+}
+
+
+.sec2 h3 {
+    font-size: 2.1875rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+.sec2 h4 {
+    font-size: 1.6875rem;
+    font-weight: 400;
+}
+
+.sec2 .profilewrap {
+    display: flex;
+    max-width: 87.5rem;
+    width: 100%;
+    height: 50.5625rem;
+    padding-top: 3.125rem;
+    margin: 0 auto;
+
+}
+
+.sec2 .left {
+    width: 100%;
+}
+
+.sec2 .right {
+    margin: 4.375rem 0;
+}
+
+.sec2 .right>* {
+    width: 100%;
+    height: 17.5rem;
+}
+
+.skillsinner {
+    margin-top: 1.25rem;
+
+}
+
+/* sec3 */
+.sec3 {
+    background-color: #ffffff;
+    padding: 6rem 0;
+}
+
+.sec3 .sec3inner {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.sec3 .sec3inner .bigtitle {
+    padding-bottom: 3.125rem;
+}
+
+.title {
+    font-size: 2.8125rem;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+
+}
+
+.sec3 .webwrap {
+    display: flex;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.sec3 .wrapinner>* {
+    margin: 7.5rem 0;
+}
+
+.sec3 .webwrap img {
+    border-radius: 1.25rem;
+}
+
+.sec3 .webwrap .titleinner {
+    margin: auto auto;
+}
+
+.sec3 .webwrap .titleinner h1 {
+    padding: 1.25rem 0;
+    font-weight: 700;
+}
+
+.sec3 .webwrap .clickwrap {
+    display: flex;
+    gap: 1.875rem;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+    margin-top: 2.5rem;
+}
+
+.sec3 .webwrap .clickbtn {
+    width: 11.25rem;
+    height: 4.25rem;
+    border-radius: 3.125rem;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 200%;
+    font-size: 1.875rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 200;
+}
+
+.sec3 .webwrap .clickbtn:hover {
+    background-color: #353535;
+    color: white;
+}
+
+/* sec4 */
+
+.sec4 {
+    background-color: #E8FFE5;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sec4 .sec4inner .title {
+    margin: 0 auto;
+    width: 70%;
+    padding: 4.375rem 0;
+}
+
+/* detail 부분 */
+.sec4 .detail-inner {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 6.25rem;
+
+}
+
+
+.sec4 .detail-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardwrap {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.slide1 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.slide1 .swiper-wrapper .swiper-slide {
+    object-fit: cover;
+    height: 28.125rem;
+    display: flex;
+
+}
+
+.slide1 .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide2,
+.slide3 {
+    height: 50%;
+    width: 50%;
+}
+
+.slide2 img,
+.slide3 img {
+    width: 100%;
+}
+
+.sec5 {
+    width: 100%;
+
+    padding: 10rem 0;
+    background-color: #E8FFE5;
+}
+
+.sec5 h1 {
+    font-size: 7.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+.gotop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 50px;
+    border-radius: 50px;
+    background-color:black;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* 박스쉐도우 간격조절 */
