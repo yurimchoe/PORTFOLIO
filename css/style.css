@@ -243,11 +243,12 @@ body {
     height: 50.5625rem;
     padding-top: 3.125rem;
     margin: 0 auto;
+    justify-content: center;
 
 }
 
 .sec2 .left {
-    width: 100%;
+    width: 65%;
 }
 
 .sec2 .right {
@@ -266,7 +267,7 @@ body {
 
 /* sec3 */
 .sec3 {
-    background-color: #ffffff;
+    background-color: #efffeb;
     padding: 6rem 0;
 }
 
@@ -349,17 +350,21 @@ body {
 }
 
 /* detail 부분 */
-.sec4 .detail-inner {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: center;
-    gap: 6.25rem;
 
+.sec4 .detail-inner{
+  display:flex;
+  justify-content:center;
+  gap: 120px;
+  width: 68%;
+  margin: 0 auto;
 }
 
+.sec4 .detail-inner a {
+    width: 50%;
+    object-fit: cover;
 
-.sec4 .detail-inner img {
+}
+.sec4 .detail-inner img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -367,10 +372,10 @@ body {
 
 .cardwrap {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: center;
+    width: 55%;
     margin: 0 auto;
-    gap: 50px;
+    gap: 15.25rem;
 }
 
 .slide1 {
@@ -425,6 +430,7 @@ body {
     background-color:black;
     color: white;
     text-align: center;
+    z-index: 100;
     line-height: 45px;
 }
 
